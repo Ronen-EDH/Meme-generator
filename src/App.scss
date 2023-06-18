@@ -30,6 +30,39 @@ body {
   }
 }
 
+.main {
+  &__form {
+    border-radius: 0.313rem;
+    border: solid #d5d4d8 1px;
+  }
+  padding: 2.25rem;
+  &__form-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 40px 40px;
+    gap: 1rem;
+  }
+  &__form-text {
+    font-family: "Karla", sans-serif;
+    font-size: 12px;
+    text-indent: 0.625rem;
+    // &::placeholder {
+    //   color: #0d0d0d;
+    // }
+  }
+  &__form-button {
+    grid-column: 1/3;
+    background: linear-gradient(90deg, #672280 1.18%, #a626d3 100%);
+    color: white;
+    font-family: "Karla", sans-serif;
+    font-size: 16px;
+    letter-spacing: -0.07rem;
+    padding-bottom: 0.313rem;
+    border: none;
+    cursor: pointer;
+  }
+}
+
 // Work on the Responsiveness later
 @media (min-width: 600px) {
   .header {
